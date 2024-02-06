@@ -25,7 +25,7 @@ const TicketCard = ({ ticket }) => {
         <PriorityDisplay priority={ticket.priority} />
         <div className="ml-auto">
           {/* ml-auto | pushes DeleteBlock to the right */}
-          <DeleteBlock />
+          <DeleteBlock id={ticket._id} />
         </div>
       </div>
       <h4>{ticket?.title}</h4>
