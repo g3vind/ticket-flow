@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ticket Flow : A Ticketing Application 
+
+Welcome to our Ticketing Application repository! This project is a full-stack ticket management system designed to handle both issues and tasks efficiently. It comes with advanced features like ticket tagging, real-time status tracking, and progress monitoring. Additionally, it integrates real-time CRUD operations for seamless management of tickets.
+
+## Features
+
+- **Ticket Tagging**: Assign tags to tickets for better categorization and organization.
+- **Real-time Status Tracking**: Monitor the status of tickets in real-time for enhanced visibility and transparency.
+- **Progress Tracking**: Keep track of the progress of tickets to ensure timely resolution.
+- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on tickets seamlessly.
+- **NextAuth Integration**: Utilizes NextAuth for secure authentication and authorization, ensuring controlled access to the application.
+
+## Screenshots
+
+*Please replace the following placeholders with actual screenshots of your application.*
+
+### Home Page (Dashboard)
+![Screenshot (78)](https://github.com/g3vind/ticket-flow/assets/70854788/fe5889f7-4c50-4655-bbd0-0c018f4b9ab5)
+
+
+### Create New Ticket Page
+![Screenshot (79)](https://github.com/g3vind/ticket-flow/assets/70854788/2249663a-8599-4025-aac3-4194a0d7431e)
+
+
+### Ticket Updation Page
+![Screenshot (80)](https://github.com/g3vind/ticket-flow/assets/70854788/ed1eff7a-ad5b-422d-81be-1022621178b4)
+
+
+## Technologies Used
+
+- **Frontend**: Next.js
+- **Database**: MongoDB
+- **Authentication**: NextAuth
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Ticketing Application, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository:
+
+```
+git clone https://github.com/g3vind/ticket-flow.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+cd ticket-flow
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install dependencies for both frontend and backend:
 
-## Learn More
+```
+cd ticket-flow
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Set up the environment variables. You might need to create a `.env.local` file variables such as database connection string.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Start the frontend server:
+```npm run dev```
 
-## Deploy on Vercel
+7. Access the application in your browser at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you'd like to contribute to this project.
+
+Happy coding! 🚀
