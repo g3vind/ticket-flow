@@ -1,3 +1,4 @@
+import NoTickets from "./(components)/NoTickets";
 import TicketCard from "./(components)/TicketCard";
 
 const getTickets = async () => {
@@ -18,6 +19,10 @@ const Dashboard = async () => {
   const uniqueCategories = [
     ...new Set(tickets.map(({ category }) => category)),
   ];
+
+  if (tickets.length === 0) {
+    return <NoTickets />;
+  }
 
   return (
     <div className="p-5">
