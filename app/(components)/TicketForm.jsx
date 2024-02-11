@@ -1,4 +1,4 @@
-"use client"; // using client-side js
+"use client";
 
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -11,13 +11,13 @@ const TicketForm = ({ ticket }) => {
     const name = e.target.name;
 
     setFormData((preState) => ({
-      ...preState, // keep the previous state
-      [name]: value, // update the value of specific key
+      ...preState,
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // prevents the page from reloading
+    e.preventDefault();
 
     if (EDITMODE) {
       const res = await fetch(`/api/Tickets/${ticket._id}`, {
