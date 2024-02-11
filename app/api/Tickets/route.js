@@ -5,7 +5,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const ticketData = body.formData;
-    await Ticket.create(ticketData); // .create() is built into mongoose
+    await Ticket.create(ticketData);
 
     return NextResponse.json({ message: "Ticket Created" }, { status: 201 });
   } catch (error) {
